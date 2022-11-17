@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [2,3,6,4,43,8,5,3,9];
+    let minarr = array[0];
+    function minarry(array) {
+    for ( i=1 ;i < array.length; i++ ) {
+        if (array[i]< minarr ) {
+            minarr = array[i] ;
+        }
+       }
+    return minarr ;
+    }
+    alert(minarr);
+    let arr1 = [];
+    let min = minArray(arr1);
+
+    function minArray(arr) {
+        if (arr.length == 0) {
+            return -1;
+
+        let min = arr[0];
+
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        return min;
+    }
+
+    alert(min);
+</script>
+</body>
+</html>
